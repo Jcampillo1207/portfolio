@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import posthog from "posthog-js"
 import {
   Select,
   SelectContent,
@@ -115,7 +116,11 @@ export const ContributionGraph = ({
         </span>
         <Select
           value={String(year)}
-          onValueChange={(v) => setYear(Number(v))}
+          onValueChange={(v) => {
+            const newYear = Number(v)
+            setYear(newYear)
+            posthog.capture("contribution_year_changed", { year: newYear })
+          }}
         >
           <SelectTrigger className="h-8 w-[110px] text-xs">
             <SelectValue />
