@@ -27,7 +27,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 const siteUrl = "https://jmcr.beer"
-const title = "José Campillo — Self-taught engineer & co-founder at Intello"
+const title = "José Campillo"
 const description =
   "Self-taught engineer from Mexico. Co-founder at Intello. I build digital innovation projects for governments and private companies."
 
