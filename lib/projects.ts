@@ -22,5 +22,17 @@ export const projects = [
     description:
       "Civic engagement platform for municipal governments. Citizen reports routed to the right department with real-time tracking.",
     link: "https://intelloai.com/platforms/agora",
+  },
+  {
+    name: "Weebun",
+    description:
+      "Outdoor advertising marketplace for Mexico. Find billboards and screens on a map, book them and pay online.",
+    link: "https://weebun.com",
+  },
+  {
+    name: "Montara",
+    description:
+      "Real estate platform for a Torreón agency. Property catalog for buyers, lead tracking and follow-up for agents.",
+    link: "https://montarabr.com",
   }
 ]
